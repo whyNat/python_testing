@@ -2,11 +2,11 @@ from selenium.webdriver.support.select import Select
 
 
 class ContactHelper:
-    def __init__(self, app_contact):
-        self.app_contact = app_contact
+    def __init__(self, app):
+        self.app = app
 
     def create(self, contact):
-        wd = self.app_contact.wd
+        wd = self.app.wd
         # init contact creation
         wd.find_element_by_link_text("add new").click()
         # fill contact form
@@ -39,5 +39,5 @@ class ContactHelper:
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
     def return_to_contacts_page(self):
-        wd = self.app_contact.wd
+        wd = self.app.wd
         wd.find_element_by_link_text("home page").click()
