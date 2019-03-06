@@ -12,3 +12,9 @@ class Contact:
         self.mobilephone = mobilephone
         self.email = email
         self.byear = byear
+
+class ContactEdition:
+    def __init__(self, name2, email2, month):
+        self.name2 = name2
+        self.email2 = email2
+        self.month = month
