@@ -38,20 +38,30 @@ class ContactHelper:
         # submit contact creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
 
-    def edit_first_contact(self, contact):
+    def select_first_contact(self):
         wd = self.app.wd
-        # select first contact
         wd.find_element_by_name("selected[]").click()
+
+    def update_value(self, contact_field_name, text):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(contact_field_name).click()
+            wd.find_element_by_name(contact_field_name).clear()
+            wd.find_element_by_name(contact_field_name).send_keys(text)
+
+    def fill_contact_form(self, contact):
+        wd = self.app.wd
+        self.update_value("firstname", contact.contactname)
+        self.update_value("email", contact.email)
+
+    def modify_first_contact(self, new_contact_data):
+        wd = self.app.wd
+        self.select_first_contact()
         # submit edition
         wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
-        # update data
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys("%s" % contact.name2)
-        wd.find_element_by_name("email2").clear()
-        wd.find_element_by_name("email2").send_keys("%s" % contact.email2)
-        Select(wd.find_element_by_name("bmonth")).select_by_visible_text("%s" % contact.month)
-        wd.find_element_by_css_selector("option[value=\"%s\"]" % contact.month).click()
-        #submit contact update
+        # fill contact form
+        self.fill_contact_form(new_contact_data)
+        # submit contact update
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
 
     def delete_first_contact(self):
