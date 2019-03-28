@@ -5,8 +5,14 @@ class ContactHelper:
     def __init__(self, app):
         self.app = app
 
+    def check_if_contacts_page(self):
+        wd = self.app.wd
+        if not (len(wd.find_elements_by_link_text("Logout")) > 0 and len(wd.find_elements_by_name("searchstring")) > 0):
+            wd.find_element_by_link_text("home page").click()
+
     def create(self, contact):
         wd = self.app.wd
+        self.check_if_contacts_page()
         # init contact creation
         wd.find_element_by_link_text("add new").click()
         # fill contact form
@@ -56,6 +62,7 @@ class ContactHelper:
 
     def modify_first_contact(self, new_contact_data):
         wd = self.app.wd
+        self.check_if_contacts_page()
         self.select_first_contact()
         # submit edition
         wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
@@ -66,6 +73,7 @@ class ContactHelper:
 
     def delete_first_contact(self):
         wd = self.app.wd
+        self.check_if_contacts_page()
         # select first contact
         wd.find_element_by_name("selected[]").click()
         # submit deletion
@@ -79,4 +87,5 @@ class ContactHelper:
 
     def count(self):
         wd = self.app.wd
+        self.check_if_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
