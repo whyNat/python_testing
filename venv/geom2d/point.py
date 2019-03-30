@@ -16,10 +16,10 @@ class Point:
     def __eq__(self, other):
         return self.x == other.x and self.y == other.y
 
-    # operacja używana do sortowania
+    # lt = [less then] operacja używana do sortowania
     def __lt__(self, other):
         return self.y < other.y
 
-    # czytelne wyświetlanie na konsoli list
+    # czytelne wyświetlanie list na konsoli
     def __repr__(self):
         return 'Point(%s, %s)' %(self.x, self.y)
