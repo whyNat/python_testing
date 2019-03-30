@@ -45,6 +45,7 @@ class ContactHelper:
         wd.find_element_by_name("byear").send_keys("%s" % contact.byear)
         # submit contact creation
         wd.find_element_by_xpath("(//input[@name='submit'])[2]").click()
+        self.contact_cache = None
 
     def select_first_contact(self):
         wd = self.app.wd
@@ -72,6 +73,7 @@ class ContactHelper:
         self.fill_contact_form(new_contact_data)
         # submit contact update
         wd.find_element_by_xpath("(//input[@name='update'])[2]").click()
+        self.contact_cache = None
 
     def delete_first_contact(self):
         wd = self.app.wd
@@ -82,6 +84,7 @@ class ContactHelper:
         wd.find_element_by_xpath("//input[@value='Delete']").click()
         # close dialog
         wd.switch_to.alert.accept()
+        self.contact_cache = None
 
     def return_to_contacts_page(self):
         wd = self.app.wd
@@ -92,13 +95,16 @@ class ContactHelper:
         self.check_if_contacts_page()
         return len(wd.find_elements_by_name("selected[]"))
 
+    contact_cache = None
+
     def get_contact_list(self):
-        wd = self.app.wd
-        self.check_if_contacts_page()
-        contacts = []
-        for element in wd.find_elements_by_name("entry"):
-            text = element.find_element_by_xpath("//td[2]").text
-            text2 = element.find_element_by_xpath("//td[3]").text
-            id = element.find_element_by_name("selected[]").get_attribute("value")
-            contacts.append(Contact(contactsurname=text, contactname=text2, id=id))
-        return contacts
+        if self.contact_cache is None:
+            wd = self.app.wd
+            self.check_if_contacts_page()
+            self.contact_cache = []
+            for element in wd.find_elements_by_name("entry"):
+                text = element.find_element_by_xpath("//td[2]").text
+                text2 = element.find_element_by_xpath("//td[3]").text
+                id = element.find_element_by_name("selected[]").get_attribute("value")
+                self.contact_cache.append(Contact(contactsurname=text, contactname=text2, id=id))
+        return self.contact_cache
