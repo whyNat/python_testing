@@ -11,7 +11,6 @@
       <change beforePath="$PROJECT_DIR$/venv/test/test_add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test/test_add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/test/test_del_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test/test_del_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/venv/test/test_del_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test/test_del_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_modify_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/test/test_modify_contact.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,8 +59,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/venv/fixture/contact.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
-              <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
+            <state relative-caret-position="277">
+              <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
               <folding>
                 <element signature="e#0#52#0" expanded="true" />
               </folding>
@@ -163,9 +162,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="419" />
-    <option name="y" value="-22" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="471" />
+    <option name="y" value="31" />
     <option name="width" value="1234" />
     <option name="height" value="1209" />
   </component>
@@ -536,22 +535,17 @@
       <option name="project" value="LOCAL" />
       <updated>1553975354797</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="modification group fixed">
+      <created>1554220492327</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1554220492327</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_modify_contact_py - 2019.03.31 at 20h 51m 55s.xml">
-      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_modify_contact_py - 2019.03.31 at 20h 54m 59s.xml">
-      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_modify_contact_py - 2019.03.31 at 20h 55m 10s.xml">
-      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_modify_contact_py - 2019.03.31 at 20h 55m 54s.xml">
-      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_modify_group_py - 2019.03.31 at 20h 56m 50s.xml">
       <configuration name="pytest in test_modify_group.py" configurationId="tests" />
     </history-entry>
@@ -570,6 +564,18 @@
     <history-entry file="pytest_in_test_modify_contact_py - 2019.03.31 at 21h 21m 00s.xml">
       <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="pytest_in_test_modify_contact_py - 2019.04.02 at 17h 50m 52s.xml">
+      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_modify_contact_py - 2019.04.02 at 17h 51m 43s.xml">
+      <configuration name="pytest in test_modify_contact.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_phones_py - 2019.04.02 at 17h 52m 06s.xml">
+      <configuration name="pytest in test_phones.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contact_py - 2019.04.02 at 17h 52m 32s.xml">
+      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,15 +587,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="471" y="31" width="1234" height="1209" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873737" visible="true" weight="0.13066386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873737" visible="true" weight="0.20735785" />
       <window_info id="Structure" order="1" sideWeight="0.5012626" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="2" sideWeight="0.5012626" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" weight="0.3106424" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.30111524" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.46883988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -605,7 +611,6 @@
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="methods and classes for adding contacts" />
     <MESSAGE value="adding contacts" />
     <MESSAGE value="changes for driver" />
     <MESSAGE value="create fixtures" />
@@ -630,7 +635,8 @@
     <MESSAGE value="cache and hash" />
     <MESSAGE value="randomization" />
     <MESSAGE value="map i filter, description" />
-    <option name="LAST_COMMIT_MESSAGE" value="map i filter, description" />
+    <MESSAGE value="modification group fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="modification group fixed" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test_add_group.py" />
@@ -870,8 +876,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/venv/fixture/contact.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
-          <caret line="77" column="62" selection-start-line="77" selection-start-column="62" selection-end-line="77" selection-end-column="62" />
+        <state relative-caret-position="277">
+          <caret line="106" column="24" selection-start-line="106" selection-start-column="24" selection-end-line="106" selection-end-column="24" />
           <folding>
             <element signature="e#0#52#0" expanded="true" />
           </folding>

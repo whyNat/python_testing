@@ -19,9 +19,9 @@ class ContactHelper:
         wd.find_element_by_link_text("add new").click()
         # fill contact form
         wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys("%s" % contact.contactname)
+        wd.find_element_by_name("firstname").send_keys("%s" % contact.firstname)
         wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys("%s" % contact.contactsurname)
+        wd.find_element_by_name("lastname").send_keys("%s" % contact.lastname)
         wd.find_element_by_name("nickname").clear()
         wd.find_element_by_name("nickname").send_keys("%s" % contact.contactnickname)
         wd.find_element_by_name("title").clear()
@@ -60,7 +60,7 @@ class ContactHelper:
 
     def fill_contact_form(self, contact):
         wd = self.app.wd
-        self.update_value("firstname", contact.contactname)
+        self.update_value("firstname", contact.firstname)
         self.update_value("email", contact.email)
 
     def select_contact_by_index(self, index):
@@ -75,7 +75,7 @@ class ContactHelper:
         self.check_if_contacts_page()
         self.select_contact_by_index(index)
         # submit edition
-        wd.find_element_by_css_selector("img[alt=\"Edit\"]").click()
+        wd.find_elements_by_css_selector("img[alt='Edit']")[index].click()
         # fill contact form
         self.fill_contact_form(new_contact_data)
         # submit contact update
@@ -111,9 +111,43 @@ class ContactHelper:
             wd = self.app.wd
             self.check_if_contacts_page()
             self.contact_cache = []
-            for element in wd.find_elements_by_name("entry"):
-                text = element.find_element_by_xpath("//td[2]").text
-                text2 = element.find_element_by_xpath("//td[3]").text
-                id = element.find_element_by_name("selected[]").get_attribute("value")
-                self.contact_cache.append(Contact(contactsurname=text, contactname=text2, id=id))
-        return self.contact_cache
+            for row in wd.find_elements_by_name("entry"):
+                cells = row.find_elements_by_tag_name("td")
+                lastname = cells[1].text
+                firstname = cells[2].text
+                id = cells[0].find_element_by_tag_name("input").get_attribute("value")
+                all_phones = cells[5].text.splitlines()
+                self.contact_cache.append(Contact(firstname=firstname, lastname=lastname, id=id, homephone=all_phones[0], workphone=all_phones[1]))        #, mobilephone=all_phones[2], secondaryphone=all_phones[3]
+        return list(self.contact_cache)
+
+    def open_contact_to_edit_by_index(self, index):
+        wd = self.app.wd
+        self.check_if_contacts_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[7]
+        cell.find_element_by_tag_name("a").click()
+
+    def open_contact_view_by_index(self, index):
+        wd = self.app.wd
+        self.check_if_contacts_page()
+        row = wd.find_elements_by_name("entry")[index]
+        cell = row.find_elements_by_tag_name("td")[6]
+        cell.find_element_by_tag_name("a").click()
+
+    def get_contact_info_from_edit_page(self, index):
+        wd = self.app.wd
+        self.open_contact_to_edit_by_index(index)
+        firstname = wd.find_element_by_name("firstname").get_attribute("value")
+        lastname = wd.find_element_by_name("lastname").get_attribute("value")
+        id = wd.find_element_by_name("id").get_attribute("value")
+        homephone = wd.find_element_by_name("home").get_attribute("value")
+        workphone = wd.find_element_by_name("work").get_attribute("value")
+        mobilephone = wd.find_element_by_name("mobile").get_attribute("value")
+        secondaryphone = wd.find_element_by_name("phone2").get_attribute("value")
+        return Contact(firstname=firstname, lastname=lastname, id=id,
+                       homephone=homephone, workphone=workphone, mobilephone=mobilephone, secondaryphone=secondaryphone)
+
+
+
+
+
