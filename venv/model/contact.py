@@ -21,7 +21,7 @@ class Contact:
         self.all_phones_from_home_page = all_phones_from_home_page
 
     def __repr__(self):
-        return '%s:%s' % (self.id, self.lastname)   # representation - porównuje wg fizycznego rozmieszczenia obiektów w pamięci
+        return '%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s:%s ' % (self.firstname, self.lastname, self.nickname, self.title, self.company, self.address, self.homephone, self.mobilephone, self.workphone, self.secondaryphone, self.email, self.month, self.byear, self.id, self.all_phones_from_home_page)   # representation - porównuje wg fizycznego rozmieszczenia obiektów w pamięci
 
     def __eq__(self, other):
         return (self.id is None or other.id is None or self.id == other.id) \
