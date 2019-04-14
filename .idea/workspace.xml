@@ -1,55 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="85c2f36d-c720-451f-8c24-06291d595c14" name="Default Changelist" comment="transition optimisation">
-      <change afterPath="$PROJECT_DIR$/data/contacts.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generator/contact.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test_emails.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/Activate.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/activate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/deactivate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-3.7.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/easy_install.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.7-script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.7.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pip3.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/python.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/Scripts/pythonw.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/conftest.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/files.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fixture/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fixture/application.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fixture/contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fixture/group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/fixture/session.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/geom2d/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/geom2d/point.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/geometry.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/hello.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/model/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/model/contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/model/group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/quadratic.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/target.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_add_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_add_group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_del_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_del_group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_modify_contact.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_modify_group.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/test/test_phones.py" beforeDir="false" />
-    </list>
+    <list default="true" id="85c2f36d-c720-451f-8c24-06291d595c14" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data/groups.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="7" selection-end-column="1" />
+            <state relative-caret-position="153">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -103,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <state relative-caret-position="408">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -124,7 +76,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/test_emails.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="340">
@@ -220,7 +172,6 @@
         <option value="$PROJECT_DIR$/data/groups.py" />
         <option value="$PROJECT_DIR$/venv/test/test_add_group.py" />
         <option value="$PROJECT_DIR$/venv/conftest.py" />
-        <option value="$PROJECT_DIR$/test/test_add_group.py" />
         <option value="$PROJECT_DIR$/test/test_add_contact.py" />
         <option value="$PROJECT_DIR$/model/contact.py" />
         <option value="$PROJECT_DIR$/test/test_phones.py" />
@@ -230,6 +181,7 @@
         <option value="$PROJECT_DIR$/generator/contact.py" />
         <option value="$PROJECT_DIR$/generator/group.py" />
         <option value="$PROJECT_DIR$/data/contacts.py" />
+        <option value="$PROJECT_DIR$/test/test_add_group.py" />
       </list>
     </option>
   </component>
@@ -663,7 +615,21 @@
       <option name="project" value="LOCAL" />
       <updated>1554641628798</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="data from file">
+      <created>1555236956258</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1555236956258</updated>
+    </task>
+    <task id="LOCAL-00035" summary="changing the location of files">
+      <created>1555237160809</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1555237160809</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -711,12 +677,12 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49873737" visible="true" weight="0.14857745" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49873737" visible="true" weight="0.14857745" />
       <window_info id="Structure" order="1" sideWeight="0.5012626" side_tool="true" weight="0.24973656" />
       <window_info id="Favorites" order="2" sideWeight="0.5012626" side_tool="true" weight="0.24973656" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.34419942" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947312" visible="true" weight="0.34419942" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49947312" weight="0.29913712" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,8 +718,6 @@
     </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="isolated classess" />
-    <MESSAGE value="isolated classess for contacts" />
     <MESSAGE value="groups and contacts in one class" />
     <MESSAGE value="little adjustment" />
     <MESSAGE value="main fixture" />
@@ -777,7 +741,9 @@
     <MESSAGE value="test parametrization" />
     <MESSAGE value="parameters from the command line" />
     <MESSAGE value="configuration file" />
-    <option name="LAST_COMMIT_MESSAGE" value="configuration file" />
+    <MESSAGE value="data from file" />
+    <MESSAGE value="changing the location of files" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing the location of files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -909,16 +875,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/generator/contact.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/contacts.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-249">
@@ -957,24 +913,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/groups.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="7" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/contacts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="23" selection-start-column="23" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1002,6 +944,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="63" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/generator/contact.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/groups.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_add_group.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
