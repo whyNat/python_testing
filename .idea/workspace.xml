@@ -667,12 +667,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="pytest_in_test_emails_py - 2019.04.13 at 15h 32m 02s.xml">
-      <configuration name="pytest in test_emails.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="pytest_in_test_emails_py - 2019.04.13 at 15h 32m 10s.xml">
-      <configuration name="pytest in test_emails.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="pytest_in_test_emails_py - 2019.04.13 at 15h 37m 55s.xml">
       <configuration name="pytest in test_emails.py" configurationId="tests" />
     </history-entry>
@@ -696,6 +690,12 @@
     </history-entry>
     <history-entry file="pytest_in_test_emails_py - 2019.04.13 at 16h 00m 40s.xml">
       <configuration name="pytest in test_emails.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_group_py - 2019.04.14 at 12h 12m 32s.xml">
+      <configuration name="pytest in test_add_group.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_add_contact_py - 2019.04.14 at 12h 14m 01s.xml">
+      <configuration name="pytest in test_add_contact.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
